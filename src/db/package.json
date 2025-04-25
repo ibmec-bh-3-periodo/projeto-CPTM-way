@@ -1,5 +1,31 @@
 {
+  "name": "projeto-cptm-way",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ibmec-bh-3-periodo/projeto-CPTM-way.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/ibmec-bh-3-periodo/projeto-CPTM-way/issues"
+  },
+  "homepage": "https://github.com/ibmec-bh-3-periodo/projeto-CPTM-way#readme",
   "dependencies": {
     "express": "^5.1.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
   }
 }
