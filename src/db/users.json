@@ -1,8 +1,19 @@
 [
+  {
+    "nome": "",
+    "email": "",
+    "senha": ""
+  },
+  [
     {
-      "nome": "João",
-      "email": "joao@email.com",
+      "nome": "Marcelo",
+      "email": "marcelovazdemelocastro@gmail.com",
       "senha": "1234"
     }
-  ]
-  
+  ],
+  {
+    "nome": "eMe",
+    "email": "matheusandrade@gmail.com",
+    "senha": "12345"
+  }
+]
