@@ -20,7 +20,9 @@
 - TypeScript
 - JSON
 - Insomnia
+- VSCode
 
 ## 📌 Critérios de Entrega
-- Critério 1
-- Critério 2
+- Todas as funcionalidades testadas
+- Código e arquivos organizados
+- Testes funcionais
