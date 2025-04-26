@@ -2,12 +2,12 @@
   "name": "projeto-cptm-way",
   "version": "1.0.0",
   "description": "",
-  "main": "server.js",
+  "main": "src/db/server.js",
   "directories": {
     "doc": "docs"
   },
   "scripts": {
-    "dev": "nodemon index.js"
+    "dev": "nodemon src/db/server.js"
   },
   "repository": {
     "url": "git+https://github.com/ibmec-bh-3-periodo/projeto-CPTM-way.git"
