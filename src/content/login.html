@@ -31,14 +31,45 @@
             <h2 class="text-left flex font-bold text-2xl mb-8">Entrar na sua conta</h2>
             <div class="caixa shadow-md">
                 <form id="loginForm" class="bg-white shadow-md px-8 pt-8">
-                        <input class="w-full text-red-700 border-b border-gray-300 focus:outline-none" id="email" type="email" placeholder="Email:" required>
-                        <input class="w-full text-red-700 focus:outline-none" id="senha" type="password" placeholder="Senha:" required>
-            </div>   
-                    <div>
-                        <button class="login-button shadow-lg font-bold" type="button" onclick="window.location.href='home.html'">Continuar</button>
-                    </div>
+                    <input
+                        class="w-full text-red-700 border-b border-gray-300 focus:outline-none"
+                        id="email"
+                        type="email"
+                        placeholder="Email:"
+                        required
+                    >
+                    <input
+                        class="w-full text-red-700 focus:outline-none mt-4"
+                        id="password"
+                        type="password"
+                        placeholder="Senha:"
+                        required
+                    >
+                    <!-- Aviso de erro -->
+                    <div
+                        id="error-message"
+                        class="-mt-2 bg-red-100 border border-red-400 text-red-700 px-4 py-2 rounded text-sm"
+                    >
+                    ></div>
+            </div>
+
+            <div class="mt-4">
+                <button
+                    class="login-button shadow-lg font-bold"
+                    type="button"
+                    onclick="
+                        const result = validateLogin();
+                        if (result === true) {
+                            window.location.href = 'home.html';
+                        } else {
+                            document.getElementById('error-message').textContent = result;
+                        }
+                    "
+                >
+                    Continuar
+                </button>
+            </div>
                 </form>
-            
 
             <p class="text-center text-gray-600 my-4 font-semibold">Ou escolha a opção</p>
 
