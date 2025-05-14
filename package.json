@@ -7,7 +7,8 @@
     "doc": "docs"
   },
   "scripts": {
-    "dev": "nodemon src/db/server.js"
+    "dev": "nodemon src/db/server.js",
+    "test": "jest"
   },
   "repository": {
     "url": "git+https://github.com/ibmec-bh-3-periodo/projeto-CPTM-way.git"
