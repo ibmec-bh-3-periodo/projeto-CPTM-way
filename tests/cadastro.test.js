@@ -58,4 +58,35 @@
       expect(msg.style.color).toBe('red');
     });
   });
+  test('exibe erro quando senhas não coincidem', () => {
+      const form = document.getElementById('cadastroForm');
+      document.getElementById('email').value = 'a@b.com';
+      document.getElementById('confirmEmail').value = 'a@b.com';
+      document.getElementById('senha').value = '1234';
+      document.getElementById('confirmSenha').value = '5678';
+      const msg = form.querySelector('p');
+  
+      form.dispatchEvent(new Event('submit', { bubbles: true, cancelable: true }));
+  
+      expect(msg.textContent).toBe('As senhas não coincidem.');
+      expect(msg.style.color).toBe('red');
+    });
+  
+    test('exibe erro quando e-mail já existe', () => {
+      // Pré-cadastra um usuário no localStorage
+      localStorage.setItem('users', JSON.stringify([{ email: 'a@b.com', password: '0000' }]));
+  
+      const form = document.getElementById('cadastroForm');
+      document.getElementById('email').value = 'a@b.com';
+      document.getElementById('confirmEmail').value = 'a@b.com';
+      document.getElementById('senha').value = '1234';
+      document.getElementById('confirmSenha').value = '1234';
+      const msg = form.querySelector('p');
+  
+      form.dispatchEvent(new Event('submit', { bubbles: true, cancelable: true }));
+  
+      expect(msg.textContent).toBe('Este e-mail já está cadastrado.');
+      expect(msg.style.color).toBe('red');
+    });
+
   
