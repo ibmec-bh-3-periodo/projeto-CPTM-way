@@ -7,7 +7,8 @@
     "doc": "docs"
   },
   "scripts": {
-    "dev": "nodemon src/db/server.js"
+    "dev": "nodemon src/db/server.js",
+    "test": "jest"
   },
   "repository": {
     "url": "git+https://github.com/ibmec-bh-3-periodo/projeto-CPTM-way.git"
@@ -24,6 +25,11 @@
     "express": "^5.1.0"
   },
   "devDependencies": {
+    "jest": "^29.7.0",
+    "jest-environment-jsdom": "^29.7.0",
     "nodemon": "^2.0.22"
+  },
+  "jest": {
+    "testEnvironment": "jest-environment-jsdom"
   }
 }
