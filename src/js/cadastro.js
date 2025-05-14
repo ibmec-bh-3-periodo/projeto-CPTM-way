@@ -1,51 +1,57 @@
-// src/js/cadastro.js
+const botao = document.getElementById("button2");
+botao.removeAttribute("onclick");
 
 const form = document.getElementById("cadastroForm");
-const email = document.getElementById("email");
-const confirmarEmail = document.getElementById("confirmarEmail");
-const senha = document.getElementById("senha");
-const confirmarSenha = document.getElementById("confirmarSenha");
+// Elemento para exibir mensagens de erro/sucesso
 const msg = document.createElement("p");
+msg.style.marginTop = "0.5rem";
 form.appendChild(msg);
 
 form.addEventListener("submit", function(event) {
     event.preventDefault();
 
-    // 1) validações
-    if (email.value !== confirmarEmail.value) {
-        msg.textContent = "Os e-mails não coincidem.";
-        msg.style.color = "red";
-        return;
-    }
-    if (senha.value !== confirmarSenha.value) {
-        msg.textContent = "As senhas não coincidem.";
-        msg.style.color = "red";
-        return;
-    }
-    if (!email.value || !senha.value) {
+    // 1) captura os valores no momento do submit
+    const email = document.getElementById("email").value.trim();
+    const confirmarEmail = document.getElementById("confirmEmail").value.trim();
+    const senha = document.getElementById("senha").value;
+    const confirmarSenha = document.getElementById("confirmSenha").value;
+
+    // 2) validações básicas
+    if (!email || !confirmarEmail || !senha || !confirmarSenha) {
         msg.textContent = "Preencha todos os campos.";
         msg.style.color = "red";
         return;
     }
+    if (email !== confirmarEmail) {
+        msg.textContent = "Os e-mails não coincidem.";
+        msg.style.color = "red";
+        return;
+    }
+    if (senha !== confirmarSenha) {
+        msg.textContent = "As senhas não coincidem.";
+        msg.style.color = "red";
+        return;
+    }
 
-    // 2) ler o array de usuários atual (ou criar um vazio)
+    // 3) ler usuários do localStorage
     const users = JSON.parse(localStorage.getItem("users") || "[]");
 
-    // 3) checar se o e-mail já existe
-    if (users.some(u => u.email === email.value.trim())) {
+    // 4) checar duplicidade de email
+    if (users.some(u => u.email === email)) {
         msg.textContent = "Este e-mail já está cadastrado.";
         msg.style.color = "red";
         return;
     }
 
-    // 4) adicionar novo usuário
-    users.push({
-        email: email.value.trim(),
-        password: senha.value // em produção não armazene texto puro!
-    });
+    // 5) salvar novo usuário
+    users.push({ email, password: senha });
     localStorage.setItem("users", JSON.stringify(users));
 
-    // 5) feedback e redirecionamento
-    alert("Cadastro realizado com sucesso!");
-    window.location.href = "login.html";
+    // 6) feedback e redirecionamento
+    msg.textContent = "Cadastro realizado com sucesso!";
+    msg.style.color = "green";
+    
+    setTimeout(() => {
+        window.location.href = "login.html";
+    }, 1000);
 });
