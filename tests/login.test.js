@@ -1,39 +1,29 @@
 // COMEÇO CÓDIGO DO LOGIN.JS
-
-const loginFormElement = document.getElementById("loginForm");
-if (loginFormElement) {
-    loginFormElement.addEventListener("submit", function(event) {
-        event.preventDefault(); 
-        window.location.href = "home.html"; 
-    });
-}
+const users = require('../src/db/users.json').flatMap(item =>
+    Array.isArray(item) ? item : [item]
+);
 
 function validateLogin() {
-    const emailInput = document.getElementById("email");
-    const passwordInput = document.getElementById("password");
-    if (!emailInput || !passwordInput) {
-        return "Preencha todos os campos";
-    }
-    const email = emailInput.value;
-    const password = passwordInput.value;
-    if (email === "" || password === "") {
-        return "Preencha todos os campos";
-    }
+    const email = document.getElementById('email').value.trim();
+    const password = document.getElementById('password').value;
 
+    if (!email || !password) {
+        return 'Preencha todos os campos';
+    }
     if (!validateEmail(email)) {
-        return "Email inválido";
+        return 'Email inválido';
     }
-
     if (password.length < 6) {
-        return "A senha deve ter pelo menos 6 caracteres";
+        return 'A senha deve ter pelo menos 6 caracteres';
     }
 
-    return true;
+    const match = users.find(u => u.email === email && u.senha === password);
+    return match ? true : 'Email ou senha incorretos';
 }
 
 function validateEmail(email) {
     const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    return re.test(String(email).toLowerCase());
+    return re.test(email.toLowerCase());
 }
 // FIM CODIGO DO LOGIN.JS
 
@@ -87,9 +77,15 @@ describe('validateLogin()', () => {
         expect(window.validateLogin()).toBe('A senha deve ter pelo menos 6 caracteres');
     });
 
-    test('retorna true para credenciais válidas', () => {
-        document.getElementById('email').value = 'user@example.com';
-        document.getElementById('password').value = '123456';
+    test('retorna erro quando email ou senha não correspondem com um usuário existente no users.json', () => {
+        document.getElementById('email').value = 'invalid@example.com';
+        document.getElementById('password').value = 'wrongpassword';
+        expect(window.validateLogin()).toBe('Email ou senha incorretos');
+    });
+
+    test('retorna true quando email e senha correspondem com um usuário existente no users.json', () => {
+        document.getElementById('email').value = 'marcelovazdemelocastro@gmail.com';
+        document.getElementById('password').value = '12345678';
         expect(window.validateLogin()).toBe(true);
     });
 });
