@@ -9,10 +9,10 @@
 ## 👥 Distribuição de Tarefas
 | Integrante | Tarefa              | Prazo |
 |------------|---------------------|-------|
-| Matheus    |Criação de testes    |       |
-| Marcelo    |Criação de database  |       |
-| Luiz       |Busca das Situações  |       |
-| Ian        |Organizar os arquivos|       |
+| Matheus    |Cadastro e testes    |       |
+| Marcelo    |API e testes         |       |
+| Luiz       |Database e testes    |       |
+| Ian        |Login e testes       |       |
 
 ## 🛠️ Ferramentas e Tecnologias Previstas
 - Jest
