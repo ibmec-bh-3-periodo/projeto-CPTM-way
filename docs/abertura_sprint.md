@@ -4,7 +4,7 @@
 - [ ] Organizar os Arquivos
 - [ ] Criar os testes para as funções
 - [ ] Criação de database
-- [ ] Busca das Situações
+- [ ] Login e cadastro funcional
 
 ## 👥 Distribuição de Tarefas
 | Integrante | Tarefa              | Prazo |
