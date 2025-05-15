@@ -3,13 +3,18 @@
 ## ✅ O que deu certo?
 - Criação do servidor
 - Organização dos arquivos
+- Padrões bem definidos para o resto do projeto
+- Validações back do login funcionando
 - Criação dos testes da página de cadastro e de login
 
 ## 🚫 O que não deu certo?
-- Tudo saiu como planejado
+- Comunicação entre os membros
+- Compromisso do time
+- Organização de tarefas
 
 ## 🛠️ O que podemos melhorar para a próxima sprint?
-- Ainda não foram visto pontos a serem melhorados
+- Comunicação entre os membros
+- Compromisso do time
 
 ## 🧠 Aprendizados da sprint
 - Utilizar jest para fazer testes com DOM
@@ -29,11 +34,11 @@
 ## 🙋 Avaliação individual 
 - Nome: Ian Meirelles
 - Contribuições principais: Reformulação da função de login e criação de seus testes
-- Dificuldade enfrentada: Nenhuma
+- Dificuldade enfrentada: Muitas faltas
 - Nota para meu desempenho (0 a 10): 10
 
 ## 🙋 Avaliação individual 
 - Nome: Luiz Felipe
 - Contribuições principais: Criação de testes para o cadastro
-- Dificuldade enfrentada: Nenhuma
+- Dificuldade enfrentada: Comunicação
 - Nota para meu desempenho (0 a 10): 8
