@@ -8,7 +8,6 @@
 - Ian Meirelles: Scrum Master
 - Luiz Moura: Desenvolvimento
 - Marcelo Castro: Desenvolvimento
-- Theo Moyses: Desenvolvimento
 - Matheus Andrade: Desenvolvimento
 
 # 1. Nome do Projeto: CPTM Way
