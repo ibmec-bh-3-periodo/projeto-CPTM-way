@@ -5,10 +5,10 @@
 
 ## Integrantes
 
-- Ian Meirelles: Scrum Master
+- Ian Meirelles: Desenvolvimento
 - Luiz Moura: Desenvolvimento
 - Marcelo Castro: Desenvolvimento
-- Matheus Andrade: Desenvolvimento
+- Matheus Andrade: Scrum Master
 
 # 1. Nome do Projeto: CPTM Way
 
