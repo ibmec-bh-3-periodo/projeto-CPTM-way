@@ -23,22 +23,22 @@
 - Nome: Matheus Andrade
 - Contribuições principais: Reformulação da função de cadastro e criação dos testes da mesma
 - Dificuldade enfrentada: Realizar os testes com DOM
-- Nota para meu desempenho (0 a 10): 10
+- Nota para meu desempenho (0 a 10): 8
 
 ## 🙋 Avaliação individual
 - Nome: Marcelo Vaz
 - Contribuições principais: Construção da API e testes do cadastro
 - Dificuldade enfrentada: Difiuldade para atualizar o banco de dados através do login
-- Nota para meu desempenho (0 a 10): 9
+- Nota para meu desempenho (0 a 10): 8
 
 ## 🙋 Avaliação individual 
 - Nome: Ian Meirelles
 - Contribuições principais: Reformulação da função de login e criação de seus testes
 - Dificuldade enfrentada: Muitas faltas
-- Nota para meu desempenho (0 a 10): 10
+- Nota para meu desempenho (0 a 10): 5
 
 ## 🙋 Avaliação individual 
 - Nome: Luiz Felipe
 - Contribuições principais: Criação de testes para o cadastro
 - Dificuldade enfrentada: Comunicação
-- Nota para meu desempenho (0 a 10): 8
+- Nota para meu desempenho (0 a 10): 6
