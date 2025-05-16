@@ -7,7 +7,7 @@ const msg = document.createElement("p");
 msg.style.marginTop = "0.5rem";
 form.appendChild(msg);
 
-form.addEventListener("submit", function(event) {
+form.addEventListener("submit", async function(event) {
     event.preventDefault();
 
     // 1) captura os valores no momento do submit
@@ -33,25 +33,38 @@ form.addEventListener("submit", function(event) {
         return;
     }
 
-    // 3) ler usuários do localStorage
-    const users = JSON.parse(localStorage.getItem("users") || "[]");
+    try {
+        // 3) checar duplicidade no servidor JSON
+        const resGet = await fetch("http://localhost:3333/users?email=" + encodeURIComponent(email));
+        const existing = await resGet.json();
+        if (existing.length > 0) {
+            msg.textContent = "Este e-mail já está cadastrado.";
+            msg.style.color = "red";
+            return;
+        }
 
-    // 4) checar duplicidade de email
-    if (users.some(u => u.email === email)) {
-        msg.textContent = "Este e-mail já está cadastrado.";
+        // 4) enviar novo usuário para o "banco" JSON
+        const resPost = await fetch("http://localhost:3333/users", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({ email, password: senha })
+        });
+
+        if (!resPost.ok) {
+            throw new Error("Erro ao salvar no servidor: " + resPost.status);
+        }
+
+        // 5) feedback e redirecionamento
+        msg.textContent = "Cadastro realizado com sucesso!";
+        msg.style.color = "green";
+
+        setTimeout(() => {
+            window.location.href = "login.html";
+        }, 1000);
+
+    } catch (error) {
+        console.error(error);
+        msg.textContent = "Ocorreu um erro. Tente novamente mais tarde.";
         msg.style.color = "red";
-        return;
     }
-
-    // 5) salvar novo usuário
-    users.push({ email, password: senha });
-    localStorage.setItem("users", JSON.stringify(users));
-
-    // 6) feedback e redirecionamento
-    msg.textContent = "Cadastro realizado com sucesso!";
-    msg.style.color = "green";
-    
-    setTimeout(() => {
-        window.location.href = "login.html";
-    }, 1000);
 });
