@@ -1,580 +1,515 @@
-{
-  "Classificação": {
-    "Grande Porte": [],
-    "Aeroporto Guarulhos": [],
-    "Brás": [],
-    "Dom Bosco": [],
-    "Engº Goulart": [],
-    "Francisco Morato": [],
-    "Guaianazes": [],
-    "Guarulhos CECAP": [],
-    "Itaim Paulista": [],
-    "José Bonifácio": [],
-    "Luz": [],
-    "Mauá": [],
-    "Palmeiras-Barra Funda": [],
-    "Pref. CDaniel-Santo André": [],
-    "São Caetano": [],
-    "São Miguel Paulista": [],
-    "Suzano": [],
-    "Tamanduateí": [],
-    "Tatuapé": [],
-    "Vila Aurora": [],
-    "Médio Porte": [],
-    "Antonio Gianetti Neto": [],
-    "Brás Cubas": [],
-    "Calmon Viana": [],
-    "Capuava": [],
-    "Comendador Ermelino": [],
-    "Estudantes": [],
-    "Ferraz de Vasconcelos": [],
-    "Franco da Rocha": [],
-    "Guapituba": [],
-    "Ipiranga": [],
-    "Itaquaquecetuba": [],
-    "Jaraguá": [],
-    "Jardim Romano": [],
-    "Jd Helena - Vila Mara": [],
-    "Mogi das Cruzes": [],
-    "Pirituba": [],
-    "Ribeirão Pires": [],
-    "USP Leste": [],
-    "Utinga": [],
-    "Pequeno Porte": [],
-    "Água Branca": [],
-    "Aracaré": [],
-    "Baltazar Fidélis": [],
-    "Botujuru": [],
-    "Caieiras": [],
-    "Campo Limpo Pta.": [],
-    "Corinthians Itaquera": [],
-    "Engº Manoel Feio": [],
-    "Jundiaí": [],
-    "Jundiapeba": [],
-    "Lapa 7": [],
-    "Moóca": [],
-    "Perus": [],
-    "Piqueri": [],
-    "Poá": [],
-    "Prefeito Saladino": [],
-    "Rio Grande da Serra": [],
-    "Várzea Paulista": [],
-    "Vila Clarice": [],
-    "Total Geral": 57
+[
+  {
+    "ESTAÇÕES": "Aeroporto Guarulhos",
+    "TOTAL (DU)": 2136301,
+    "ÁREAS (m²)": 36986.58,
+    "LINHA": 13,
+    "Linha": 13,
+    "Estações": "AEROPORTO-GUARULHO",
+    "Classificação": "Grande Porte"
   },
-  "Estacao_DemandaArea": [
-    {
-      "ESTAÇÕES": "Aeroporto Guarulhos",
-      "TOTAL (DU)": 2136301,
-      "ÁREAS (m²)": 36986.58,
-      "LINHA": 13,
-      "Linha": 13,
-      "Estações": "AEROPORTO-GUARULHO",
-      "Classificação": "Grande Porte"
-    },
-    {
-      "ESTAÇÕES": "Água Branca",
-      "TOTAL (DU)": 2151176,
-      "ÁREAS (m²)": 6812.4,
-      "LINHA": 7,
-      "Linha": 7,
-      "Estações": "ÁGUA BRANCA",
-      "Classificação": "Pequeno Porte"
-    },
-    {
-      "ESTAÇÕES": "Antonio Gianetti Neto",
-      "TOTAL (DU)": 4363702,
-      "ÁREAS (m²)": 15655.72,
-      "LINHA": 11,
-      "Linha": 11,
-      "Estações": "ANTONIO GIANETTI NETO",
-      "Classificação": "Médio Porte"
-    },
-    {
-      "ESTAÇÕES": "Aracaré",
-      "TOTAL (DU)": 2321731,
-      "ÁREAS (m²)": 11952.11,
-      "LINHA": 12,
-      "Linha": 12,
-      "Estações": "ARACARÉ",
-      "Classificação": "Pequeno Porte"
-    },
-    {
-      "ESTAÇÕES": "Baltazar Fidélis",
-      "TOTAL (DU)": 2772623,
-      "ÁREAS (m²)": 7895.89,
-      "LINHA": 7,
-      "Linha": 7,
-      "Estações": "BALTAZAR FIDÉLIS",
-      "Classificação": "Pequeno Porte"
-    },
-    {
-      "ESTAÇÕES": "Botujuru",
-      "TOTAL (DU)": 518073,
-      "ÁREAS (m²)": 10703.01,
-      "LINHA": 7,
-      "Linha": 7,
-      "Estações": "BOTUJURU",
-      "Classificação": "Pequeno Porte"
-    },
-    {
-      "ESTAÇÕES": "Brás",
-      "TOTAL (DU)": 54601804,
-      "ÁREAS (m²)": 35843.54,
-      "LINHA": 12,
-      "Linha": "11 e 12",
-      "Estações": "BRAS",
-      "Classificação": "Grande Porte"
-    },
-    {
-      "ESTAÇÕES": "Brás Cubas",
-      "TOTAL (DU)": 2220854,
-      "ÁREAS (m²)": 18841.36,
-      "LINHA": 11,
-      "Linha": 11,
-      "Estações": "BRAS CUBAS",
-      "Classificação": "Médio Porte"
-    },
-    {
-      "ESTAÇÕES": "Caieiras",
-      "TOTAL (DU)": 3945611,
-      "ÁREAS (m²)": 7029.91,
-      "LINHA": 7,
-      "Linha": 7,
-      "Estações": "CAIEIRAS",
-      "Classificação": "Pequeno Porte"
-    },
-    {
-      "ESTAÇÕES": "Calmon Viana",
-      "TOTAL (DU)": 2606333,
-      "ÁREAS (m²)": 13656.4,
-      "LINHA": 12,
-      "Linha": "11 e 12",
-      "Estações": "CALMON VIANA",
-      "Classificação": "Médio Porte"
-    },
-    {
-      "ESTAÇÕES": "Campo Limpo Pta.",
-      "TOTAL (DU)": 1171421,
-      "ÁREAS (m²)": 9771.75,
-      "LINHA": 7,
-      "Linha": 7,
-      "Estações": "CAMPO LIMPO PAULISTA",
-      "Classificação": "Pequeno Porte"
-    },
-    {
-      "ESTAÇÕES": "Capuava",
-      "TOTAL (DU)": 2059208,
-      "ÁREAS (m²)": 17005.32,
-      "LINHA": 10,
-      "Linha": 10,
-      "Estações": "CAPUAVA",
-      "Classificação": "Médio Porte"
-    },
-    {
-      "ESTAÇÕES": "Comendador Ermelino",
-      "TOTAL (DU)": 2443569,
-      "ÁREAS (m²)": 14269.54,
-      "LINHA": 12,
-      "Linha": 12,
-      "Estações": "COMENDADOR ERMELINO",
-      "Classificação": "Médio Porte"
-    },
-    {
-      "ESTAÇÕES": "Corinthians Itaquera",
-      "TOTAL (DU)": 13690235,
-      "ÁREAS (m²)": 7377.47,
-      "LINHA": 11,
-      "Linha": 11,
-      "Estações": "CORINTHIANS-ITAQUERA",
-      "Classificação": "Pequeno Porte"
-    },
-    {
-      "ESTAÇÕES": "Dom Bosco",
-      "TOTAL (DU)": 5783674,
-      "ÁREAS (m²)": 32558.44,
-      "LINHA": 11,
-      "Linha": 11,
-      "Estações": "DOM BOSCO",
-      "Classificação": "Grande Porte"
-    },
-    {
-      "ESTAÇÕES": "Engº Goulart",
-      "TOTAL (DU)": 1796627,
-      "ÁREAS (m²)": 30394.67,
-      "LINHA": 13,
-      "Linha": 12,
-      "Estações": "ENGENHEIRO GOULART",
-      "Classificação": "Grande Porte"
-    },
-    {
-      "ESTAÇÕES": "Engº Manoel Feio",
-      "TOTAL (DU)": 3690496,
-      "ÁREAS (m²)": 10494.0,
-      "LINHA": 12,
-      "Linha": 12,
-      "Estações": "ENGENHEIRO MANOEL FEIO",
-      "Classificação": "Pequeno Porte"
-    },
-    {
-      "ESTAÇÕES": "Estudantes",
-      "TOTAL (DU)": 4229151,
-      "ÁREAS (m²)": 12310.98,
-      "LINHA": 11,
-      "Linha": 11,
-      "Estações": "Estudantes",
-      "Classificação": "Médio Porte"
-    },
-    {
-      "ESTAÇÕES": "Ferraz de Vasconcelos",
-      "TOTAL (DU)": 7960177,
-      "ÁREAS (m²)": 16557.76,
-      "LINHA": 11,
-      "Linha": 11,
-      "Estações": "FERRAZ DE VASCONCELOS",
-      "Classificação": "Médio Porte"
-    },
-    {
-      "ESTAÇÕES": "Francisco Morato",
-      "TOTAL (DU)": 10300706,
-      "ÁREAS (m²)": 19924.73,
-      "LINHA": 7,
-      "Linha": 7,
-      "Estações": "FRANCISCO MORATO",
-      "Classificação": "Grande Porte"
-    },
-    {
-      "ESTAÇÕES": "Franco da Rocha",
-      "TOTAL (DU)": 6912856,
-      "ÁREAS (m²)": 18182.16,
-      "LINHA": 7,
-      "Linha": 7,
-      "Estações": "FRANCO DA ROCHA",
-      "Classificação": "Médio Porte"
-    },
-    {
-      "ESTAÇÕES": "Guaianazes",
-      "TOTAL (DU)": 22266793,
-      "ÁREAS (m²)": 23584.57,
-      "LINHA": 11,
-      "Linha": 11,
-      "Estações": "GUAIANAZES",
-      "Classificação": "Grande Porte"
-    },
-    {
-      "ESTAÇÕES": "Guapituba",
-      "TOTAL (DU)": 2474547,
-      "ÁREAS (m²)": 12512.09,
-      "LINHA": 10,
-      "Linha": 10,
-      "Estações": "GUAPITUBA",
-      "Classificação": "Médio Porte"
-    },
-    {
-      "ESTAÇÕES": "Guarulhos CECAP",
-      "TOTAL (DU)": 965932,
-      "ÁREAS (m²)": 25356.65,
-      "LINHA": 13,
-      "Linha": 13,
-      "Estações": "GUARULHO-CECAP",
-      "Classificação": "Grande Porte"
-    },
-    {
-      "ESTAÇÕES": "Ipiranga",
-      "TOTAL (DU)": 2986033,
-      "ÁREAS (m²)": 16643.48,
-      "LINHA": 10,
-      "Linha": 10,
-      "Estações": "IPIRANGA",
-      "Classificação": "Médio Porte"
-    },
-    {
-      "ESTAÇÕES": "Itaim Paulista",
-      "TOTAL (DU)": 9612907,
-      "ÁREAS (m²)": 19915.52,
-      "LINHA": 12,
-      "Linha": 12,
-      "Estações": "ITAIM PAULISTA",
-      "Classificação": "Grande Porte"
-    },
-    {
-      "ESTAÇÕES": "Itaquaquecetuba",
-      "TOTAL (DU)": 5424672,
-      "ÁREAS (m²)": 13520.4,
-      "LINHA": 12,
-      "Linha": 12,
-      "Estações": "ITAQUAQUECETUBA",
-      "Classificação": "Médio Porte"
-    },
-    {
-      "ESTAÇÕES": "Jaraguá",
-      "TOTAL (DU)": 5353747,
-      "ÁREAS (m²)": 13733.79,
-      "LINHA": 7,
-      "Linha": 7,
-      "Estações": "JARAGUÁ",
-      "Classificação": "Médio Porte"
-    },
-    {
-      "ESTAÇÕES": "Jardim Romano",
-      "TOTAL (DU)": 5902207,
-      "ÁREAS (m²)": 13081.96,
-      "LINHA": 12,
-      "Linha": 12,
-      "Estações": "JARDIM ROMANO",
-      "Classificação": "Médio Porte"
-    },
-    {
-      "ESTAÇÕES": "Jd Helena - Vila Mara",
-      "TOTAL (DU)": 4655073,
-      "ÁREAS (m²)": 13429.35,
-      "LINHA": 12,
-      "Linha": 12,
-      "Estações": "JARDIM HELENA-VILA MARA",
-      "Classificação": "Médio Porte"
-    },
-    {
-      "ESTAÇÕES": "José Bonifácio",
-      "TOTAL (DU)": 5260410,
-      "ÁREAS (m²)": 20588.95,
-      "LINHA": 11,
-      "Linha": 11,
-      "Estações": "JOSÉ BONIFÁCIO",
-      "Classificação": "Grande Porte"
-    },
-    {
-      "ESTAÇÕES": "Jundiaí",
-      "TOTAL (DU)": 2657508,
-      "ÁREAS (m²)": 10081.06,
-      "LINHA": 7,
-      "Linha": 7,
-      "Estações": "JUNDIAÍ",
-      "Classificação": "Pequeno Porte"
-    },
-    {
-      "ESTAÇÕES": "Jundiapeba",
-      "TOTAL (DU)": 2340474,
-      "ÁREAS (m²)": 6428.46,
-      "LINHA": 11,
-      "Linha": 11,
-      "Estações": "JUNDIAPEBA",
-      "Classificação": "Pequeno Porte"
-    },
-    {
-      "ESTAÇÕES": "Lapa 7",
-      "TOTAL (DU)": 9336323,
-      "ÁREAS (m²)": 8533.43,
-      "LINHA": 7,
-      "Linha": 7,
-      "Estações": "LAPA 7-RUBI",
-      "Classificação": "Pequeno Porte"
-    },
-    {
-      "ESTAÇÕES": "Luz",
-      "TOTAL (DU)": 44318427,
-      "ÁREAS (m²)": 26622.77,
-      "LINHA": 10,
-      "Linha": "7,10 e 11",
-      "Estações": "LUZ",
-      "Classificação": "Grande Porte"
-    },
-    {
-      "ESTAÇÕES": "Mauá",
-      "TOTAL (DU)": 14723443,
-      "ÁREAS (m²)": 18333.34,
-      "LINHA": 10,
-      "Linha": 10,
-      "Estações": "MAUÁ",
-      "Classificação": "Grande Porte"
-    },
-    {
-      "ESTAÇÕES": "Mogi das Cruzes",
-      "TOTAL (DU)": 3731324,
-      "ÁREAS (m²)": 16129.24,
-      "LINHA": 11,
-      "Linha": 11,
-      "Estações": "MOGI DAS CRUZES",
-      "Classificação": "Médio Porte"
-    },
-    {
-      "ESTAÇÕES": "Moóca",
-      "TOTAL (DU)": 2145698,
-      "ÁREAS (m²)": 11167.95,
-      "LINHA": 10,
-      "Linha": 10,
-      "Estações": "MOOCA",
-      "Classificação": "Pequeno Porte"
-    },
-    {
-      "ESTAÇÕES": "Palmeiras-Barra Funda",
-      "TOTAL (DU)": 49059788,
-      "ÁREAS (m²)": 48176.25,
-      "LINHA": 7,
-      "Linha": "7 e 8",
-      "Estações": "PALMEIRAS-BARRA FUNDA",
-      "Classificação": "Grande Porte"
-    },
-    {
-      "ESTAÇÕES": "Perus",
-      "TOTAL (DU)": 6992024,
-      "ÁREAS (m²)": 10908.7,
-      "LINHA": 7,
-      "Linha": 7,
-      "Estações": "PERUS",
-      "Classificação": "Pequeno Porte"
-    },
-    {
-      "ESTAÇÕES": "Piqueri",
-      "TOTAL (DU)": 2254755,
-      "ÁREAS (m²)": 10787.59,
-      "LINHA": 7,
-      "Linha": 7,
-      "Estações": "PIQUERI",
-      "Classificação": "Pequeno Porte"
-    },
-    {
-      "ESTAÇÕES": "Pirituba",
-      "TOTAL (DU)": 5040866,
-      "ÁREAS (m²)": 13427.25,
-      "LINHA": 7,
-      "Linha": 7,
-      "Estações": "PIRITUBA",
-      "Classificação": "Médio Porte"
-    },
-    {
-      "ESTAÇÕES": "Poá",
-      "TOTAL (DU)": 4318887,
-      "ÁREAS (m²)": 11316.91,
-      "LINHA": 11,
-      "Linha": 11,
-      "Estações": "POÁ",
-      "Classificação": "Pequeno Porte"
-    },
-    {
-      "ESTAÇÕES": "Pref. CDaniel-Santo André",
-      "TOTAL (DU)": 17827683,
-      "ÁREAS (m²)": 27982.96,
-      "LINHA": 10,
-      "Linha": 10,
-      "Estações": "PREFEITO CELSO DANIEL-SANTO ANDRÉ",
-      "Classificação": "Grande Porte"
-    },
-    {
-      "ESTAÇÕES": "Prefeito Saladino",
-      "TOTAL (DU)": 2555471,
-      "ÁREAS (m²)": 9154.71,
-      "LINHA": 10,
-      "Linha": 10,
-      "Estações": "PREFEITO SALADINO",
-      "Classificação": "Pequeno Porte"
-    },
-    {
-      "ESTAÇÕES": "Ribeirão Pires",
-      "TOTAL (DU)": 5293268,
-      "ÁREAS (m²)": 13374.14,
-      "LINHA": 10,
-      "Linha": 10,
-      "Estações": "RIBEIRÃO PIRES",
-      "Classificação": "Médio Porte"
-    },
-    {
-      "ESTAÇÕES": "Rio Grande da Serra",
-      "TOTAL (DU)": 2969928,
-      "ÁREAS (m²)": 8051.74,
-      "LINHA": 10,
-      "Linha": 10,
-      "Estações": "RIO GRANDE DA SERRA",
-      "Classificação": "Pequeno Porte"
-    },
-    {
-      "ESTAÇÕES": "São Caetano",
-      "TOTAL (DU)": 9028226,
-      "ÁREAS (m²)": 24641.09,
-      "LINHA": 10,
-      "Linha": 10,
-      "Estações": "SÃO CAETANO",
-      "Classificação": "Grande Porte"
-    },
-    {
-      "ESTAÇÕES": "São Miguel Paulista",
-      "TOTAL (DU)": 5209402,
-      "ÁREAS (m²)": 19573.89,
-      "LINHA": 12,
-      "Linha": 12,
-      "Estações": "SÃO MIGUEL PAULISTA",
-      "Classificação": "Grande Porte"
-    },
-    {
-      "ESTAÇÕES": "Suzano",
-      "TOTAL (DU)": 11595642,
-      "ÁREAS (m²)": 25057.28,
-      "LINHA": 11,
-      "Linha": 11,
-      "Estações": "SUZANO",
-      "Classificação": "Grande Porte"
-    },
-    {
-      "ESTAÇÕES": "Tamanduateí",
-      "TOTAL (DU)": 21619245,
-      "ÁREAS (m²)": 26701.52,
-      "LINHA": 10,
-      "Linha": 10,
-      "Estações": "TAMANDUATEÍ",
-      "Classificação": "Grande Porte"
-    },
-    {
-      "ESTAÇÕES": "Tatuapé",
-      "TOTAL (DU)": 22221172,
-      "ÁREAS (m²)": 20463.66,
-      "LINHA": 12,
-      "Linha": "11 e 12",
-      "Estações": "TATUAPÉ",
-      "Classificação": "Grande Porte"
-    },
-    {
-      "ESTAÇÕES": "USP Leste",
-      "TOTAL (DU)": 1841916,
-      "ÁREAS (m²)": 13037.44,
-      "LINHA": 12,
-      "Linha": 12,
-      "Estações": "USP LESTE",
-      "Classificação": "Médio Porte"
-    },
-    {
-      "ESTAÇÕES": "Utinga",
-      "TOTAL (DU)": 2894036,
-      "ÁREAS (m²)": 12801.61,
-      "LINHA": 10,
-      "Linha": 10,
-      "Estações": "UTINGA",
-      "Classificação": "Médio Porte"
-    },
-    {
-      "ESTAÇÕES": "Várzea Paulista",
-      "TOTAL (DU)": 599889,
-      "ÁREAS (m²)": 9082.36,
-      "LINHA": 7,
-      "Linha": 7,
-      "Estações": "VÁRZEA PAULISTA",
-      "Classificação": "Pequeno Porte"
-    },
-    {
-      "ESTAÇÕES": "Vila Aurora",
-      "TOTAL (DU)": 2866420,
-      "ÁREAS (m²)": 24359.14,
-      "LINHA": 7,
-      "Linha": 7,
-      "Estações": "VILA AURORA",
-      "Classificação": "Grande Porte"
-    },
-    {
-      "ESTAÇÕES": "Vila Clarice",
-      "TOTAL (DU)": 1300501,
-      "ÁREAS (m²)": 6358.27,
-      "LINHA": 7,
-      "Linha": 7,
-      "Estações": "VILA CLARICE",
-      "Classificação": "Pequeno Porte"
-    }
-  ]
-}
+  {
+    "ESTAÇÕES": "Água Branca",
+    "TOTAL (DU)": 2151176,
+    "ÁREAS (m²)": 6812.4,
+    "LINHA": 7,
+    "Linha": 7,
+    "Estações": "ÁGUA BRANCA",
+    "Classificação": "Pequeno Porte"
+  },
+  {
+    "ESTAÇÕES": "Antonio Gianetti Neto",
+    "TOTAL (DU)": 4363702,
+    "ÁREAS (m²)": 15655.72,
+    "LINHA": 11,
+    "Linha": 11,
+    "Estações": "ANTONIO GIANETTI NETO",
+    "Classificação": "Médio Porte"
+  },
+  {
+    "ESTAÇÕES": "Aracaré",
+    "TOTAL (DU)": 2321731,
+    "ÁREAS (m²)": 11952.11,
+    "LINHA": 12,
+    "Linha": 12,
+    "Estações": "ARACARÉ",
+    "Classificação": "Pequeno Porte"
+  },
+  {
+    "ESTAÇÕES": "Baltazar Fidélis",
+    "TOTAL (DU)": 2772623,
+    "ÁREAS (m²)": 7895.89,
+    "LINHA": 7,
+    "Linha": 7,
+    "Estações": "BALTAZAR FIDÉLIS",
+    "Classificação": "Pequeno Porte"
+  },
+  {
+    "ESTAÇÕES": "Botujuru",
+    "TOTAL (DU)": 518073,
+    "ÁREAS (m²)": 10703.01,
+    "LINHA": 7,
+    "Linha": 7,
+    "Estações": "BOTUJURU",
+    "Classificação": "Pequeno Porte"
+  },
+  {
+    "ESTAÇÕES": "Brás",
+    "TOTAL (DU)": 54601804,
+    "ÁREAS (m²)": 35843.54,
+    "LINHA": 12,
+    "Linha": "11 e 12",
+    "Estações": "BRAS",
+    "Classificação": "Grande Porte"
+  },
+  {
+    "ESTAÇÕES": "Brás Cubas",
+    "TOTAL (DU)": 2220854,
+    "ÁREAS (m²)": 18841.36,
+    "LINHA": 11,
+    "Linha": 11,
+    "Estações": "BRAS CUBAS",
+    "Classificação": "Médio Porte"
+  },
+  {
+    "ESTAÇÕES": "Caieiras",
+    "TOTAL (DU)": 3945611,
+    "ÁREAS (m²)": 7029.91,
+    "LINHA": 7,
+    "Linha": 7,
+    "Estações": "CAIEIRAS",
+    "Classificação": "Pequeno Porte"
+  },
+  {
+    "ESTAÇÕES": "Calmon Viana",
+    "TOTAL (DU)": 2606333,
+    "ÁREAS (m²)": 13656.4,
+    "LINHA": 12,
+    "Linha": "11 e 12",
+    "Estações": "CALMON VIANA",
+    "Classificação": "Médio Porte"
+  },
+  {
+    "ESTAÇÕES": "Campo Limpo Pta.",
+    "TOTAL (DU)": 1171421,
+    "ÁREAS (m²)": 9771.75,
+    "LINHA": 7,
+    "Linha": 7,
+    "Estações": "CAMPO LIMPO PAULISTA",
+    "Classificação": "Pequeno Porte"
+  },
+  {
+    "ESTAÇÕES": "Capuava",
+    "TOTAL (DU)": 2059208,
+    "ÁREAS (m²)": 17005.32,
+    "LINHA": 10,
+    "Linha": 10,
+    "Estações": "CAPUAVA",
+    "Classificação": "Médio Porte"
+  },
+  {
+    "ESTAÇÕES": "Comendador Ermelino",
+    "TOTAL (DU)": 2443569,
+    "ÁREAS (m²)": 14269.54,
+    "LINHA": 12,
+    "Linha": 12,
+    "Estações": "COMENDADOR ERMELINO",
+    "Classificação": "Médio Porte"
+  },
+  {
+    "ESTAÇÕES": "Corinthians Itaquera",
+    "TOTAL (DU)": 13690235,
+    "ÁREAS (m²)": 7377.47,
+    "LINHA": 11,
+    "Linha": 11,
+    "Estações": "CORINTHIANS-ITAQUERA",
+    "Classificação": "Pequeno Porte"
+  },
+  {
+    "ESTAÇÕES": "Dom Bosco",
+    "TOTAL (DU)": 5783674,
+    "ÁREAS (m²)": 32558.44,
+    "LINHA": 11,
+    "Linha": 11,
+    "Estações": "DOM BOSCO",
+    "Classificação": "Grande Porte"
+  },
+  {
+    "ESTAÇÕES": "Engº Goulart",
+    "TOTAL (DU)": 1796627,
+    "ÁREAS (m²)": 30394.67,
+    "LINHA": 13,
+    "Linha": 12,
+    "Estações": "ENGENHEIRO GOULART",
+    "Classificação": "Grande Porte"
+  },
+  {
+    "ESTAÇÕES": "Engº Manoel Feio",
+    "TOTAL (DU)": 3690496,
+    "ÁREAS (m²)": 10494.0,
+    "LINHA": 12,
+    "Linha": 12,
+    "Estações": "ENGENHEIRO MANOEL FEIO",
+    "Classificação": "Pequeno Porte"
+  },
+  {
+    "ESTAÇÕES": "Estudantes",
+    "TOTAL (DU)": 4229151,
+    "ÁREAS (m²)": 12310.98,
+    "LINHA": 11,
+    "Linha": 11,
+    "Estações": "Estudantes",
+    "Classificação": "Médio Porte"
+  },
+  {
+    "ESTAÇÕES": "Ferraz de Vasconcelos",
+    "TOTAL (DU)": 7960177,
+    "ÁREAS (m²)": 16557.76,
+    "LINHA": 11,
+    "Linha": 11,
+    "Estações": "FERRAZ DE VASCONCELOS",
+    "Classificação": "Médio Porte"
+  },
+  {
+    "ESTAÇÕES": "Francisco Morato",
+    "TOTAL (DU)": 10300706,
+    "ÁREAS (m²)": 19924.73,
+    "LINHA": 7,
+    "Linha": 7,
+    "Estações": "FRANCISCO MORATO",
+    "Classificação": "Grande Porte"
+  },
+  {
+    "ESTAÇÕES": "Franco da Rocha",
+    "TOTAL (DU)": 6912856,
+    "ÁREAS (m²)": 18182.16,
+    "LINHA": 7,
+    "Linha": 7,
+    "Estações": "FRANCO DA ROCHA",
+    "Classificação": "Médio Porte"
+  },
+  {
+    "ESTAÇÕES": "Guaianazes",
+    "TOTAL (DU)": 22266793,
+    "ÁREAS (m²)": 23584.57,
+    "LINHA": 11,
+    "Linha": 11,
+    "Estações": "GUAIANAZES",
+    "Classificação": "Grande Porte"
+  },
+  {
+    "ESTAÇÕES": "Guapituba",
+    "TOTAL (DU)": 2474547,
+    "ÁREAS (m²)": 12512.09,
+    "LINHA": 10,
+    "Linha": 10,
+    "Estações": "GUAPITUBA",
+    "Classificação": "Médio Porte"
+  },
+  {
+    "ESTAÇÕES": "Guarulhos CECAP",
+    "TOTAL (DU)": 965932,
+    "ÁREAS (m²)": 25356.65,
+    "LINHA": 13,
+    "Linha": 13,
+    "Estações": "GUARULHO-CECAP",
+    "Classificação": "Grande Porte"
+  },
+  {
+    "ESTAÇÕES": "Ipiranga",
+    "TOTAL (DU)": 2986033,
+    "ÁREAS (m²)": 16643.48,
+    "LINHA": 10,
+    "Linha": 10,
+    "Estações": "IPIRANGA",
+    "Classificação": "Médio Porte"
+  },
+  {
+    "ESTAÇÕES": "Itaim Paulista",
+    "TOTAL (DU)": 9612907,
+    "ÁREAS (m²)": 19915.52,
+    "LINHA": 12,
+    "Linha": 12,
+    "Estações": "ITAIM PAULISTA",
+    "Classificação": "Grande Porte"
+  },
+  {
+    "ESTAÇÕES": "Itaquaquecetuba",
+    "TOTAL (DU)": 5424672,
+    "ÁREAS (m²)": 13520.4,
+    "LINHA": 12,
+    "Linha": 12,
+    "Estações": "ITAQUAQUECETUBA",
+    "Classificação": "Médio Porte"
+  },
+  {
+    "ESTAÇÕES": "Jaraguá",
+    "TOTAL (DU)": 5353747,
+    "ÁREAS (m²)": 13733.79,
+    "LINHA": 7,
+    "Linha": 7,
+    "Estações": "JARAGUÁ",
+    "Classificação": "Médio Porte"
+  },
+  {
+    "ESTAÇÕES": "Jardim Romano",
+    "TOTAL (DU)": 5902207,
+    "ÁREAS (m²)": 13081.96,
+    "LINHA": 12,
+    "Linha": 12,
+    "Estações": "JARDIM ROMANO",
+    "Classificação": "Médio Porte"
+  },
+  {
+    "ESTAÇÕES": "Jd Helena - Vila Mara",
+    "TOTAL (DU)": 4655073,
+    "ÁREAS (m²)": 13429.35,
+    "LINHA": 12,
+    "Linha": 12,
+    "Estações": "JARDIM HELENA-VILA MARA",
+    "Classificação": "Médio Porte"
+  },
+  {
+    "ESTAÇÕES": "José Bonifácio",
+    "TOTAL (DU)": 5260410,
+    "ÁREAS (m²)": 20588.95,
+    "LINHA": 11,
+    "Linha": 11,
+    "Estações": "JOSÉ BONIFÁCIO",
+    "Classificação": "Grande Porte"
+  },
+  {
+    "ESTAÇÕES": "Jundiaí",
+    "TOTAL (DU)": 2657508,
+    "ÁREAS (m²)": 10081.06,
+    "LINHA": 7,
+    "Linha": 7,
+    "Estações": "JUNDIAÍ",
+    "Classificação": "Pequeno Porte"
+  },
+  {
+    "ESTAÇÕES": "Jundiapeba",
+    "TOTAL (DU)": 2340474,
+    "ÁREAS (m²)": 6428.46,
+    "LINHA": 11,
+    "Linha": 11,
+    "Estações": "JUNDIAPEBA",
+    "Classificação": "Pequeno Porte"
+  },
+  {
+    "ESTAÇÕES": "Lapa 7",
+    "TOTAL (DU)": 9336323,
+    "ÁREAS (m²)": 8533.43,
+    "LINHA": 7,
+    "Linha": 7,
+    "Estações": "LAPA 7-RUBI",
+    "Classificação": "Pequeno Porte"
+  },
+  {
+    "ESTAÇÕES": "Luz",
+    "TOTAL (DU)": 44318427,
+    "ÁREAS (m²)": 26622.77,
+    "LINHA": 10,
+    "Linha": "7,10 e 11",
+    "Estações": "LUZ",
+    "Classificação": "Grande Porte"
+  },
+  {
+    "ESTAÇÕES": "Mauá",
+    "TOTAL (DU)": 14723443,
+    "ÁREAS (m²)": 18333.34,
+    "LINHA": 10,
+    "Linha": 10,
+    "Estações": "MAUÁ",
+    "Classificação": "Grande Porte"
+  },
+  {
+    "ESTAÇÕES": "Mogi das Cruzes",
+    "TOTAL (DU)": 3731324,
+    "ÁREAS (m²)": 16129.24,
+    "LINHA": 11,
+    "Linha": 11,
+    "Estações": "MOGI DAS CRUZES",
+    "Classificação": "Médio Porte"
+  },
+  {
+    "ESTAÇÕES": "Moóca",
+    "TOTAL (DU)": 2145698,
+    "ÁREAS (m²)": 11167.95,
+    "LINHA": 10,
+    "Linha": 10,
+    "Estações": "MOOCA",
+    "Classificação": "Pequeno Porte"
+  },
+  {
+    "ESTAÇÕES": "Palmeiras-Barra Funda",
+    "TOTAL (DU)": 49059788,
+    "ÁREAS (m²)": 48176.25,
+    "LINHA": 7,
+    "Linha": "7 e 8",
+    "Estações": "PALMEIRAS-BARRA FUNDA",
+    "Classificação": "Grande Porte"
+  },
+  {
+    "ESTAÇÕES": "Perus",
+    "TOTAL (DU)": 6992024,
+    "ÁREAS (m²)": 10908.7,
+    "LINHA": 7,
+    "Linha": 7,
+    "Estações": "PERUS",
+    "Classificação": "Pequeno Porte"
+  },
+  {
+    "ESTAÇÕES": "Piqueri",
+    "TOTAL (DU)": 2254755,
+    "ÁREAS (m²)": 10787.59,
+    "LINHA": 7,
+    "Linha": 7,
+    "Estações": "PIQUERI",
+    "Classificação": "Pequeno Porte"
+  },
+  {
+    "ESTAÇÕES": "Pirituba",
+    "TOTAL (DU)": 5040866,
+    "ÁREAS (m²)": 13427.25,
+    "LINHA": 7,
+    "Linha": 7,
+    "Estações": "PIRITUBA",
+    "Classificação": "Médio Porte"
+  },
+  {
+    "ESTAÇÕES": "Poá",
+    "TOTAL (DU)": 4318887,
+    "ÁREAS (m²)": 11316.91,
+    "LINHA": 11,
+    "Linha": 11,
+    "Estações": "POÁ",
+    "Classificação": "Pequeno Porte"
+  },
+  {
+    "ESTAÇÕES": "Pref. CDaniel-Santo André",
+    "TOTAL (DU)": 17827683,
+    "ÁREAS (m²)": 27982.96,
+    "LINHA": 10,
+    "Linha": 10,
+    "Estações": "PREFEITO CELSO DANIEL-SANTO ANDRÉ",
+    "Classificação": "Grande Porte"
+  },
+  {
+    "ESTAÇÕES": "Prefeito Saladino",
+    "TOTAL (DU)": 2555471,
+    "ÁREAS (m²)": 9154.71,
+    "LINHA": 10,
+    "Linha": 10,
+    "Estações": "PREFEITO SALADINO",
+    "Classificação": "Pequeno Porte"
+  },
+  {
+    "ESTAÇÕES": "Ribeirão Pires",
+    "TOTAL (DU)": 5293268,
+    "ÁREAS (m²)": 13374.14,
+    "LINHA": 10,
+    "Linha": 10,
+    "Estações": "RIBEIRÃO PIRES",
+    "Classificação": "Médio Porte"
+  },
+  {
+    "ESTAÇÕES": "Rio Grande da Serra",
+    "TOTAL (DU)": 2969928,
+    "ÁREAS (m²)": 8051.74,
+    "LINHA": 10,
+    "Linha": 10,
+    "Estações": "RIO GRANDE DA SERRA",
+    "Classificação": "Pequeno Porte"
+  },
+  {
+    "ESTAÇÕES": "São Caetano",
+    "TOTAL (DU)": 9028226,
+    "ÁREAS (m²)": 24641.09,
+    "LINHA": 10,
+    "Linha": 10,
+    "Estações": "SÃO CAETANO",
+    "Classificação": "Grande Porte"
+  },
+  {
+    "ESTAÇÕES": "São Miguel Paulista",
+    "TOTAL (DU)": 5209402,
+    "ÁREAS (m²)": 19573.89,
+    "LINHA": 12,
+    "Linha": 12,
+    "Estações": "SÃO MIGUEL PAULISTA",
+    "Classificação": "Grande Porte"
+  },
+  {
+    "ESTAÇÕES": "Suzano",
+    "TOTAL (DU)": 11595642,
+    "ÁREAS (m²)": 25057.28,
+    "LINHA": 11,
+    "Linha": 11,
+    "Estações": "SUZANO",
+    "Classificação": "Grande Porte"
+  },
+  {
+    "ESTAÇÕES": "Tamanduateí",
+    "TOTAL (DU)": 21619245,
+    "ÁREAS (m²)": 26701.52,
+    "LINHA": 10,
+    "Linha": 10,
+    "Estações": "TAMANDUATEÍ",
+    "Classificação": "Grande Porte"
+  },
+  {
+    "ESTAÇÕES": "Tatuapé",
+    "TOTAL (DU)": 22221172,
+    "ÁREAS (m²)": 20463.66,
+    "LINHA": 12,
+    "Linha": "11 e 12",
+    "Estações": "TATUAPÉ",
+    "Classificação": "Grande Porte"
+  },
+  {
+    "ESTAÇÕES": "USP Leste",
+    "TOTAL (DU)": 1841916,
+    "ÁREAS (m²)": 13037.44,
+    "LINHA": 12,
+    "Linha": 12,
+    "Estações": "USP LESTE",
+    "Classificação": "Médio Porte"
+  },
+  {
+    "ESTAÇÕES": "Utinga",
+    "TOTAL (DU)": 2894036,
+    "ÁREAS (m²)": 12801.61,
+    "LINHA": 10,
+    "Linha": 10,
+    "Estações": "UTINGA",
+    "Classificação": "Médio Porte"
+  },
+  {
+    "ESTAÇÕES": "Várzea Paulista",
+    "TOTAL (DU)": 599889,
+    "ÁREAS (m²)": 9082.36,
+    "LINHA": 7,
+    "Linha": 7,
+    "Estações": "VÁRZEA PAULISTA",
+    "Classificação": "Pequeno Porte"
+  },
+  {
+    "ESTAÇÕES": "Vila Aurora",
+    "TOTAL (DU)": 2866420,
+    "ÁREAS (m²)": 24359.14,
+    "LINHA": 7,
+    "Linha": 7,
+    "Estações": "VILA AURORA",
+    "Classificação": "Grande Porte"
+  },
+  {
+    "ESTAÇÕES": "Vila Clarice",
+    "TOTAL (DU)": 1300501,
+    "ÁREAS (m²)": 6358.27,
+    "LINHA": 7,
+    "Linha": 7,
+    "Estações": "VILA CLARICE",
+    "Classificação": "Pequeno Porte"
+  }
+]
