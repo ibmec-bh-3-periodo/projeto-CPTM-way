@@ -1,15 +1,5 @@
 [
   {
-    "nome": "",
-    "email": "",
-    "senha": ""
-  },
-  {
-    "nome": "eMe",
-    "email": "matheusandrade@gmail.com",
-    "senha": "12345678"
-  },
-  {
     "email": "luizmoura@email.com",
     "senha": "123"
   },
@@ -28,5 +18,9 @@
   {
     "email": "ian@email.com",
     "senha": "123456"
+  },
+  {
+    "email": "Marcelo@gmail.com",
+    "senha": "1234586"
   }
 ]

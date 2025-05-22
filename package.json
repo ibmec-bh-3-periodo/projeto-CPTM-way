@@ -7,7 +7,7 @@
     "doc": "docs"
   },
   "scripts": {
-    "dev": "nodemon src/db/server.js",
+    "dev": "tsx watch src/server.ts",
     "test": "jest"
   },
   "repository": {
@@ -23,12 +23,17 @@
   "homepage": "https://github.com/ibmec-bh-3-periodo/projeto-CPTM-way#readme",
   "dependencies": {
     "cors": "^2.8.5",
-    "express": "^5.1.0"
+    "express": "^4.21.2"
   },
   "devDependencies": {
+    "@types/cors": "^2.8.18",
+    "@types/express": "^5.0.2",
+    "@types/node": "^20.17.50",
     "jest": "^29.7.0",
     "jest-environment-jsdom": "^29.7.0",
-    "nodemon": "^2.0.22"
+    "nodemon": "^2.0.22",
+    "tsx": "^4.16.2",
+    "typescript": "^5.8.3"
   },
   "jest": {
     "testEnvironment": "jest-environment-jsdom"
