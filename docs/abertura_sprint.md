@@ -26,3 +26,34 @@
 - Todas as funcionalidades testadas
 - Código e arquivos organizados
 - Testes funcionais
+
+# 🏁 Relatório de Abertura - Sprint 2
+
+## 🎯 Objetivos da Sprint
+- [ ] Criação do docker
+- [ ] Finalizar API
+- [ ] Full stack
+
+## 👥 Distribuição de Tarefas
+| Integrante | Tarefa              | Prazo |
+|------------|---------------------|-------|
+| Matheus    |Full stack           |       |
+| Marcelo    |Docker               |       |
+| Luiz       |Docker               |       |
+| Ian        |Finalizar API        |       |
+
+## 🛠️ Ferramentas e Tecnologias Previstas
+- Jest
+- JavaScript
+- TypeScript
+- JSON
+- Insomnia
+- VSCode
+- Docker
+
+## 📌 Critérios de Entrega
+- Todas as funcionalidades testadas
+- Código e arquivos organizados
+- Testes funcionais
+- Docker funcional
+- Projeto funcionando em full stack
