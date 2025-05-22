@@ -4,16 +4,29 @@
     "email": "",
     "senha": ""
   },
-  [
-    {
-      "nome": "Marcelo",
-      "email": "marcelovazdemelocastro@gmail.com",
-      "senha": "12345678"
-    }
-  ],
   {
     "nome": "eMe",
     "email": "matheusandrade@gmail.com",
     "senha": "12345678"
+  },
+  {
+    "email": "luizmoura@email.com",
+    "senha": "123"
+  },
+  {
+    "email": "teste@email.com",
+    "senha": "456"
+  },
+  {
+    "email": "teste2@email.com",
+    "senha": "123456"
+  },
+  {
+    "email": "teste3@email.com",
+    "senha": "abcdefg"
+  },
+  {
+    "email": "ian@email.com",
+    "senha": "123456"
   }
 ]

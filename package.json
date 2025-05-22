@@ -22,6 +22,7 @@
   },
   "homepage": "https://github.com/ibmec-bh-3-periodo/projeto-CPTM-way#readme",
   "dependencies": {
+    "cors": "^2.8.5",
     "express": "^5.1.0"
   },
   "devDependencies": {
