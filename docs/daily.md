@@ -14,7 +14,7 @@
 - Como realizar os testes em um ambiente com DOM
 
 ## 🗓️ Próximo passo
-- Ajudar mimnha equipe em suas dificuldades
+- Ajudar minha equipe em suas dificuldades
 
 ## 🙋 O que eu fiz desde o último relatório? (Marcelo)
 - [ ] Crie as databases
