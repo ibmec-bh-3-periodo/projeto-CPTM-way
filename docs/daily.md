@@ -128,3 +128,68 @@
 
 ## 🗓️ Próximo passo
 - Terminar minha tarefa
+
+# 📆 Relatório de Acompanhamento - Semana 22/05
+
+## 🙋 O que eu fiz desde o último relatório? (Matheus)
+- [ ] Atualizei a função Cadastro
+
+## 🚧 O que estou fazendo agora?
+- Aguardando finalização do docker 
+
+## 🧱 Quais dificuldades encontrei?
+- Nenhuma
+
+## 🧠 O que aprendi até agora?
+- Como conectar a api com o front
+
+## 🗓️ Próximo passo
+- Ajudar minha equipe com o docker 
+
+## 🙋 O que eu fiz desde o último relatório? (Marcelo)
+- [ ] Atualizei a api para typescript
+
+
+## 🚧 O que estou fazendo agora?
+- Criando endpoint para estações
+
+## 🧱 Quais dificuldades encontrei?
+- Transformar o js em ts
+
+## 🧠 O que aprendi até agora?
+- Aprendi mais sobre typescript
+
+## 🗓️ Próximo passo
+- Criação do docker
+
+## 🙋 O que eu fiz desde o último relatório? (Ian)
+- [ ] Ajustei o login
+
+
+## 🚧 O que estou fazendo agora?
+- Terminar ajuste no login, autenticação
+
+## 🧱 Quais dificuldades encontrei?
+- Nenhuma
+
+## 🧠 O que aprendi até agora?
+- Nada 
+
+## 🗓️ Próximo passo
+- Fazer magic link
+
+## 🙋 O que eu fiz desde o último relatório? (Luiz)
+- [ ] Finalizei testes do cadastro
+
+
+## 🚧 O que estou fazendo agora?
+- Criando data base das estações
+
+## 🧱 Quais dificuldades encontrei?
+- Transformar arquivos em json
+
+## 🧠 O que aprendi até agora?
+-Como transformar arquivos em json
+
+## 🗓️ Próximo passo
+- Auxiliar o docker
