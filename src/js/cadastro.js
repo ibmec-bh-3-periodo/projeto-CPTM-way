@@ -75,3 +75,21 @@ form.addEventListener("submit", async (event) => {
     msg.style.color   = "red";
   }
 });
+
+  const telefoneInput = document.getElementById("telefone");
+
+  telefoneInput.addEventListener("input", (e) => {
+    let value = e.target.value.replace(/\D/g, ""); // Remove tudo que não for número
+
+    if (value.length > 11) value = value.slice(0, 11); // Limita a 11 dígitos
+
+    // Aplica a máscara: (XX) XXXXX-XXXX
+    if (value.length >= 2 && value.length <= 6) {
+      value = value.replace(/^(\d{2})(\d+)/g, "($1) $2");
+    } else if (value.length > 6) {
+      value = value.replace(/^(\d{2})(\d{5})(\d+)/g, "($1) $2-$3");
+    }
+
+    e.target.value = value;
+  
+});
