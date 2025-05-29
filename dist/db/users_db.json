@@ -1,0 +1,38 @@
+[
+  {
+    "nome":"Luiz",
+    "telefone": "(31)99999-9999",
+    "email": "luizmoura@email.com",
+    "senha": "123"
+  },
+  {
+    "nome":"Teste",
+    "telefone":"(31)988888888",
+    "email": "teste@email.com",
+    "senha": "456"
+  },
+  {
+    "nome":"Teste",
+    "telefone":"(31)977777777",
+    "email": "teste2@email.com",
+    "senha": "123456"
+  },
+  {
+    "nome":"Teste",
+    "telefone":"(31)966666666",
+    "email": "teste3@email.com",
+    "senha": "abcdefg"
+  },
+  {
+    "nome":"Ian",
+    "telefone":"(31)9555555555",
+    "email": "ian@email.com",
+    "senha": "123456"
+  },
+  {
+    "nome":"Marcelo",
+    "telefone":"(31)944444444",
+    "email": "Marcelo@gmail.com",
+    "senha": "1234586"
+  }
+]
