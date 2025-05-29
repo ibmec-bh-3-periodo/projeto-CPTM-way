@@ -13,7 +13,7 @@ document.getElementById("loginForm").addEventListener("submit", async (event) =>
     }
 });
 
-const users = require('../src/db/users.json').flatMap(item =>
+const users = require(path.join(__dirname, 'db/users_db.json')).flatMap(item =>
     Array.isArray(item) ? item : [item]
 );
 
