@@ -1,260 +1,112 @@
+/* Reset básico e fonte */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Open Sans',
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
 }
 
+/* Cabeçalho vermelho */
 .header {
-    background-color: #F7494B;
-    width: 100%;
-    text-align: center;
-    padding: 10px;
-    color: white;
-    top: 0;
-    left: 0;
+  background-color: #F7494B;
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+  color: white;
+}
+.header h1 {
+  margin: 0;
+  font-size: 1.5em;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-h1 {
-    margin: 0;
-    font-size: 1.5em;
-}
-
-
+/* Abas */
 .tabs {
-    display: flex;
-    justify-content: space-around;
-    background-color: #F7494B;
-    width: 100%;
-    padding: 5px 0;
+  display: flex;
+  justify-content: space-around;
+  background-color: #F7494B;
+  width: 100%;
+  padding: 5px 0;
 }
-
 .tab-button {
-    background-color: transparent;
-    color: white;
-    font-size: 1em;
-    text-decoration: none;  
-    padding: 10px 20px;
-    cursor: pointer;
+  background-color: transparent;
+  color: white;
+  font-size: 1em;
+  text-decoration: none;
+  padding: 10px 20px;
+  cursor: pointer;
 }
+.tab-button.active { border-bottom: 2px solid white; }
+.tab-button:hover  { color: #ddd; }
 
-.tab-button.active {
-    border-bottom: 2px solid white;
-}
-
-.tab-button:hover {
-    color: #ddd;  
-}
-
+/* Área de conteúdo */
 .content {
-    margin-top: 30px; 
-    padding: 20px;
-    width: 100%;
-    max-width: 500px;
+  margin-top: 30px;
+  padding: 20px;
+  width: 100%;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.line-status {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
-    margin-bottom: 10px;
-    background-color: white;
-    border-radius: 10px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+/* Remove estilo nativo do select */
+.content select {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
 }
 
-.line-number {
-    font-size: 1.5em;
-    font-weight: bold;
-    padding: 5px;
-    border-radius: 50%;
-    color: white;
-    width: 40px;
-    text-align: center;
+/* Cores das opções (varia por navegador) */
+.content select option[value="7"]  { color: #E92828; }
+.content select option[value="10"] { color: #30D5C8; }
+.content select option[value="11"] { color: #FF7F50; }
+.content select option[value="12"] { color: #2E40B2; }
+.content select option[value="13"] { color: #36ED32; }
+
+/* Lista de estações */
+#stations-list li {
+  padding: 10px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
 
-.line-name {
-    font-size: 1.2em;
-    color: #333;
-}
-
-.status {
-    padding: 5px 10px;
-    border-radius: 20px;
-    background-color: #d4edda;
-    color: #155724;
-    font-size: 0.9em;
-}
-
-.red { color: #E92828; }
-.turquoise {color: #30D5C8; }
-.coral { color: #FF7F50; }
-.sapphire { color: #2E40B2; }
-.jade {color: #36ED32; }
-
-
+/* Botão inferior */
 .close-button {
-    position: relative;
-    bottom: 0px;
-    display: flex;
-    justify-content: center;
-    margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
 }
-
 .close-icon {
-    width: 15%;
-    height: auto;
-    border-radius: 10px; 
-    cursor: pointer;
+  width: 15%;
+  height: auto;
+  border-radius: 10px;
+  cursor: pointer;
 }
 
-
-@media (max-width: 828px) {
-    .header {
-        padding: 20px 10px;
-    }
-
-    h1 {
-        font-size: 1.3em;
-    }
-
-    .content {
-        padding: 10px;
-    }
-
-    .line-status {
-        padding: 10px 5px;
-    }
-
-    .status {
-        font-size: 0.8em;
-        padding: 3px 8px;
-    }
+/* Menu lateral (ajustes diversos) */
+.logocptm { width: 50px; margin-right: 45px; }
+#menu-button { padding-left: 10px; }
+#menu, #wallet, #money,
+#qrcode, #clock, #subway,
+#map, #suport, #perfil, #logout {
+  color: #79747E;
 }
-
-
-/* Logo CPTM */
-.logocptm {
-    width: 50px;
-    margin-right: 45px;
-}
-
-h1 {
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-} 
-
-/* Botão Menu */
-#menu-button {
-    padding-left: 10px;
-}
-#menu {
-    color:#F7494B
-}
-#seta {
-    color:#79747E;
-    font-size: 12px;
-}
-
-/* Carteira */
-#wallet {
-    color:#79747E;
-}
-#money {
-    color:#79747E;
-}
-#eye {
-    color:#79747E;
-    font-size: 15px;
-}
-
-/* Ajustes da lista de links */
+#seta  { color: #79747E; font-size: 12px; }
+#eye  { color: #79747E; font-size: 15px; }
 .py-2 {
-    width: 60%;
-    height: 20%;
-    border-bottom: 1px solid#C9C6C6;
-    display: flex;
-    align-items: center;
-    color: #79747E;
-}
-
-/* Links */
-#qrcode {
-    color: #79747E;
-}
-#clock {
-    color: #79747E;
-}
-#subway {
-    color: #79747E;
-}
-#map {
-    color: #79747E;
-}
-#suport {
-    color: #79747E;
-}
-#perfil {
-    color: #79747E;
-}
-#logout {
-    color: #79747E;
-}
-
-
-#speed {
-    color: #79747E;
-    font-size: 2em;
-}
-#map-pin {
-    color: #79747E;
-    font-size: 2em;
-}
-#compass {
-    color: #79747E;
-    font-size: 2em;
-}
-
-#texto {
-    color: #79747E; 
+  width: 60%;
+  height: 20%;
+  border-bottom: 1px solid #C9C6C6;
+  display: flex;
+  align-items: center;
 }
 
 /* Responsividade */
-@media (max-width: 768px) {
-    .container {
-        max-width: 100%;
-    }
-
-    .search-box {
-        width: 95%;
-    }
-
-    .footer-banner img {
-        max-width: 100%;
-    }
-
-    h1 {
-        font-size: 18px;
-    }
-
-    button {
-        font-size: 14px;
-    }
-    #elementos-meio {
-        display: flex;
-        flex-direction: column;
-        align-items: left;
-        margin-right: 0;
-        margin-left: 50px;
-        gap: 12px;
-    }
-    #metrocptm {
-        height: 100%;
-        padding-top: 0;
-        margin-top: 0;
-        padding-bottom: 5%;
-    }
-    #textotitulo {
-        font-size: 30px;
-    }
+@media (max-width: 828px) {
+  .header { padding: 20px 10px; }
+  .header h1 { font-size: 1.3em; }
+  .content { padding: 10px; }
+  .content select { padding: 0.75rem 1rem; }
+  .tabs    { padding: 4px 0; }
 }
