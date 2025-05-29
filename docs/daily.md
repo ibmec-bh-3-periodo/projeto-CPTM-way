@@ -193,3 +193,67 @@
 
 ## 🗓️ Próximo passo
 - Auxiliar o docker
+
+# 📆 Relatório de Acompanhamento - Semana 29/05
+
+## 🙋 O que eu fiz desde o último relatório? (Matheus)
+- [ ] - Consertei completamente o endpoint **POST /cadastro**
+
+## 🚧 O que estou fazendo agora?
+- Integrando o front-end para disparar a chamada de cadastro e exibir feedback de erro/sucesso. 
+
+## 🧱 Quais dificuldades encontrei?
+- Concertar redirecionamento do cadastro para o login
+
+## 🧠 O que aprendi até agora?
+- Manipular leitura/escrita de JSON em TypeScript
+
+## 🗓️ Próximo passo
+- Ajudar minha equipe com o docker 
+
+## 🙋 O que eu fiz desde o último relatório? (Marcelo)
+- [ ] Iniciei a configuração do **Docker** para a API e o “banco” JSON
+
+## 🚧 O que estou fazendo agora?
+- Ajustando volumes e paths para garantir persistência de `users_db.json`
+
+## 🧱 Quais dificuldades encontrei?
+- Alinhamento de caminhos relativos no container vs. host
+
+## 🧠 O que aprendi até agora?
+-  Containerização de aplicações Node.js/TypeScript
+
+## 🗓️ Próximo passo
+- Documentar o processo de build e subida dos containers
+
+## 🙋 O que eu fiz desde o último relatório? (Ian)
+- [ ] Consertei o endpoint **POST /login**
+
+
+## 🚧 O que estou fazendo agora?
+- Implementando autenticação avançada (Magic Link ou JWT)
+
+## 🧱 Quais dificuldades encontrei?
+- Nenhuma
+
+## 🧠 O que aprendi até agora?
+- Nada 
+
+## 🗓️ Próximo passo
+- Finalizar fluxo de Magic Link e testes de autenticação
+
+## 🙋 O que eu fiz desde o último relatório? (Luiz)
+- [ ] Colaborei na definição do **docker-compose**, orquestrando serviços de API e volume de dados
+
+
+## 🚧 O que estou fazendo agora?
+- Validando redes e permissões de leitura/gravação nos volumes montados
+
+## 🧱 Quais dificuldades encontrei?
+- Permissões de arquivo no volume persistente
+
+## 🧠 O que aprendi até agora?
+- Configuração avançada de volumes e redes no Docker Compose
+
+## 🗓️ Próximo passo
+- Ajudar na integração front-end + containers (rede e portas)

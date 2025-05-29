@@ -1,32 +1,46 @@
-### 🔐 **Endpoint /Login**
-- **POST /login**: recebe `email` e `senha`, verifica se o usuário existe no arquivo JSON `users.json`.  
-  - Se o e-mail **não existir**, retorna erro `404 - Usuário inexistente`.
-  - Se a **senha estiver incorreta**, retorna erro `401 - Senha incorreta`.
-  - Se estiver tudo certo, retorna `200 - Bem-vindo ao sistema`.
+### 🔒 **Endpoint /Login**
+- **POST /login**: recebe `email` e `senha` no corpo da requisição.
+  - Se **email ou senha não forem informados**, retorna erro  
+    `400 - Email e senha são obrigatórios`.
+  - Se o **usuário não existir**, retorna erro  
+    `404 - Usuário inexistente`.
+  - Se a **senha estiver incorreta**, retorna erro  
+    `401 - Senha incorreta`.
+  - Se tudo estiver correto, retorna  
+    `200 - Bem-vindo ao sistema`.
 
 ---
 
 ### 📝 **Endpoint /Cadastro**
-- **POST /cadastro**: recebe `nome`, `email`, `senha` → verifica se o e-mail já está cadastrado.  
-  - Se já existir, retorna `400 - Usuário já cadastrado`.
-  - Se não existir, adiciona ao arquivo `users.json` e retorna `201 - Usuário cadastrado com sucesso`.
+- **POST /cadastro**: recebe `email` e `senha` no corpo da requisição.
+  - Se já **existir** usuário com o mesmo `email`, retorna  
+    `400 - Usuário já cadastrado!`.
+  - Caso contrário:
+    1. Adiciona o novo usuário ao array em memória.
+    2. Persiste todo o array em `db/users_db.json` (indentado com 2 espaços).
+    3. Retorna  
+       `201 - Usuário cadastrado com sucesso!`  
+       junto com o objeto do usuário criado.
 
 ---
 
 ### 🌐 **Endpoint /Usuarios**
-- **GET /usuarios**: retorna todos os usuários cadastrados no arquivo `users.json`.  
-  - Este endpoint é usado principalmente para **testes** e visualização dos dados.
+- **GET /usuarios**: retorna todos os usuários cadastrados no arquivo `db/users_db.json`.
+  - Usado principalmente para **testes** e inspeção dos dados.
 
 ---
 
-### 💾 **Conexão com banco JSON**
-- A API utiliza um **arquivo local** (`users.json`) como banco de dados.
-- Na inicialização, verifica se o arquivo existe. Se não existir, cria um novo com `[]` (lista vazia).
-- As operações de cadastro e login **leem** e **escrevem** neste arquivo.
+### 💾 **Conexão com “banco” JSON**
+- A API utiliza um arquivo local **`db/users_db.json`** como “banco de dados”.
+- Na inicialização:
+  1. Tenta ler o arquivo e fazer `JSON.parse`.
+  2. Se não existir (`ENOENT`), cria um novo com `[]`.
+- As operações de cadastro e login **leem** e **escrevem** neste mesmo arquivo.
 
 ---
 
 ### 🚀 **Execução do Servidor**
-- O servidor utiliza o **Express** e escuta a porta `3333`.
-- O middleware `express.json()` permite o envio de JSON no corpo das requisições.
-- O `cors()` permite o acesso da API por aplicações externas (ex: frontend React).
+- Framework: **Express**, escutando a porta `3333`.
+- Middlewares:
+  - `express.json()` — parsing automático de JSON no corpo.
+  - `cors()` — libera chamadas de front-ends externos (ex: React).
