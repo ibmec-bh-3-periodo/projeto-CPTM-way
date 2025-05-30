@@ -9,7 +9,8 @@ server.use(express.json());
 
 // Interface para usuário
 interface Usuario {
-  //nome: string;
+  nome: string;
+  telefone: string;
   email: string;
   senha: string;
 }

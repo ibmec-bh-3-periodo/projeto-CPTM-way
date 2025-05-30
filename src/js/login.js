@@ -1,41 +1,52 @@
-const fs = require('fs').promises
+const form = document.getElementById("loginForm")
+const msg  = document.createElement("p")
+msg.style.marginTop = "0.5rem"
+form.appendChild(msg)
 
-const emailInput = document.getElementById("email");
-const passwordInput = document.getElementById("password");
+form.addEventListener("submit", async event => {
+    event.preventDefault()
 
-document.getElementById("loginForm").addEventListener("submit", async (event) => {
-    event.preventDefault();
-    const result = await validateLogin();
-    if (result === true) {
-        window.location.href = "home.html";
-    } else {
-        alert(result);
-    }
-});
-
-const users = require('../src/db/users.json').flatMap(item =>
-    Array.isArray(item) ? item : [item]
-);
-
-function validateLogin() {
-    const email = document.getElementById('email').value.trim();
-    const password = document.getElementById('password').value;
+    const email = document.getElementById("email").value.trim()
+    const password = document.getElementById("password").value
 
     if (!email || !password) {
-        return 'Preencha todos os campos';
+        setMessage("Preencha todos os campos.", "red")
+        return
     }
     if (!validateEmail(email)) {
-        return 'Email inválido';
+        setMessage("Email inválido.", "red")
+        return
     }
     if (password.length < 6) {
-        return 'A senha deve ter pelo menos 6 caracteres';
+        setMessage("A senha deve ter pelo menos 6 caracteres.", "red")
+        return
     }
 
-    const match = users.find(u => u.email === email && u.senha === password);
-    return match ? true : 'Email ou senha incorretos';
+    try {
+        const res = await fetch("http://localhost:3333/usuarios")
+        if (!res.ok) throw new Error("Falha ao buscar usuários")
+        const usuarios = await res.json()
+
+        const user = usuarios.find(u => u.email === email && u.senha === password)
+        if (!user) {
+            setMessage("Email ou senha incorretos.", "red")
+            return
+        }
+
+        window.location.href = "home.html"
+
+    } catch (err) {
+        console.error(err)
+        setMessage("Ocorreu um erro. Tente novamente mais tarde.", "red")
+    }
+})
+
+function setMessage(text, color) {
+    msg.textContent = text
+    msg.style.color = color
 }
 
 function validateEmail(email) {
-    const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    return re.test(email.toLowerCase());
+    const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
+    return re.test(email.toLowerCase())
 }

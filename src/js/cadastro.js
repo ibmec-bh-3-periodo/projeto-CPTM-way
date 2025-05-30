@@ -1,40 +1,46 @@
-// cadastro.js
 const form = document.getElementById("cadastroForm");
 const msg  = document.createElement("p");
 msg.style.marginTop = "0.5rem";
 form.appendChild(msg);
 
-form.addEventListener("submit", async (event) => {
+form.addEventListener("submit", async event => {
   event.preventDefault();
 
-  // 1) Captura os valores do formulário
-  const email          = document.getElementById("email").value.trim();
+  const nome = document.getElementById("name").value.trim();
+  const email = document.getElementById("email").value.trim();
   const confirmarEmail = document.getElementById("confirmEmail").value.trim();
-  const senha          = document.getElementById("senha").value;
+  const senha = document.getElementById("senha").value;
   const confirmarSenha = document.getElementById("confirmSenha").value;
+  const telefone = document.getElementById("telefone").value.trim();
 
-  // 2) Validações básicas
-  if (!email || !confirmarEmail || !senha || !confirmarSenha) {
-    msg.textContent = "Preencha todos os campos.";
-    msg.style.color   = "red";
+  // Validações básicas
+  if (!email || !confirmarEmail || !senha || !confirmarSenha || !telefone) {
+    setMessage("Preencha todos os campos.", "red");
     return;
   }
 
-  // Nova validação: senha com pelo menos 6 caracteres
-  if (senha.length < 6) {
-    msg.textContent = "A senha deve ter pelo menos 6 caracteres.";
-    msg.style.color   = "red";
+  if (!validateEmail(email)) {
+    setMessage("E-mail inválido.", "red");
+    return;
+  }
+
+  if (!validateTelefone(telefone)) {
+    setMessage("Telefone inválido.", "red");
     return;
   }
 
   if (email !== confirmarEmail) {
-    msg.textContent = "Os e-mails não coincidem.";
-    msg.style.color   = "red";
+    setMessage("Os e-mails não coincidem.", "red");
     return;
   }
+
+  if (senha.length < 6) {
+    setMessage("A senha deve ter pelo menos 6 caracteres.", "red");
+    return;
+  }
+
   if (senha !== confirmarSenha) {
-    msg.textContent = "As senhas não coincidem.";
-    msg.style.color   = "red";
+    setMessage("As senhas não coincidem.", "red");
     return;
   }
 
@@ -45,45 +51,57 @@ form.addEventListener("submit", async (event) => {
     const usuarios = await resGet.json();
 
     if (usuarios.some(u => u.email === email)) {
-      msg.textContent = "Este e-mail já está cadastrado.";
-      msg.style.color   = "red";
+      setMessage("Este e-mail já está cadastrado.", "red");
+      return;
+    }
+    if (usuarios.some(u => u.telefone === telefone)) {
+      setMessage("Este telefone já está cadastrado.", "red");
       return;
     }
 
-    // 4) Envia o POST para /cadastro
+    // Envia cadastro
     const resPost = await fetch("http://localhost:3333/cadastro", {
-      method:  "POST",
+      method: "POST",
       headers: { "Content-Type": "application/json" },
-      body:    JSON.stringify({ email, senha })
+      body: JSON.stringify({ nome, telefone, email, senha })
     });
     const body = await resPost.json();
 
     if (!resPost.ok) {
-      msg.textContent = body.message || "Erro no cadastro.";
-      msg.style.color   = "red";
+      setMessage(body.message || "Erro no cadastro.", "red");
       return;
     }
-
-    // 5) Sucesso: mostra mensagem e redireciona
-    msg.textContent = "Cadastro realizado com sucesso!";
-    msg.style.color   = "green";
-    setTimeout(() => window.location.href = "login.html", 1000);
+  
+    window.location.href = "login.html"
+    //setMessage("Cadastro realizado com sucesso! Redirecionando...", "green");
 
   } catch (err) {
     console.error(err);
-    msg.textContent = "Ocorreu um erro. Tente novamente mais tarde.";
-    msg.style.color   = "red";
+    setMessage("Ocorreu um erro. Tente novamente mais tarde.", "red");
   }
 });
 
-  const telefoneInput = document.getElementById("telefone");
+function setMessage(text, color) {
+  msg.textContent = text;
+  msg.style.color = color;
+}
 
-  telefoneInput.addEventListener("input", (e) => {
-    let value = e.target.value.replace(/\D/g, ""); // Remove tudo que não for número
+function validateEmail(email) {
+  const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  return re.test(email.toLowerCase());
+}
 
-    if (value.length > 11) value = value.slice(0, 11); // Limita a 11 dígitos
+function validateTelefone(telefone) {
+  const re = /^\(\d{2}\) \d{5}-\d{4}$/;
+  return re.test(telefone);
+}
 
-    // Aplica a máscara: (XX) XXXXX-XXXX
+const telefoneInput = document.getElementById("telefone");
+
+telefoneInput.addEventListener("input", (e) => {
+  let value = e.target.value.replace(/\D/g, "");
+
+  if (value.length > 11) value = value.slice(0, 11);
     if (value.length >= 2 && value.length <= 6) {
       value = value.replace(/^(\d{2})(\d+)/g, "($1) $2");
     } else if (value.length > 6) {
@@ -91,5 +109,4 @@ form.addEventListener("submit", async (event) => {
     }
 
     e.target.value = value;
-  
 });
