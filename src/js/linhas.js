@@ -39,4 +39,33 @@ function moverMetro() {
     }, 1000); // Atualiza a cada segundo
 }
 
-window.onload = moverMetro;
+async function carregarEstacoes() {
+    try {
+        const response = await fetch("../db/estacoes_db.json");
+        const estacoes = await response.json();
+
+        const lista = document.getElementById("estacoes-list");
+
+        estacoes.forEach(estacao => {
+            const item = document.createElement("div");
+            item.className = "border p-4 rounded shadow bg-white";
+
+            item.innerHTML = `
+                <h3 class="text-lg font-semibold">${estacao['ESTAÇÕES']}</h3>
+                <p><strong>Linha:</strong> ${estacao['Linha']}</p>
+                <p><strong>Classificação:</strong> ${estacao['Classificação']}</p>
+                <p><strong>Área:</strong> ${estacao['ÁREAS (m²)']} m²</p>
+                <p><strong>Total (DU):</strong> ${estacao['TOTAL (DU)'].toLocaleString('pt-BR')}</p>
+            `;
+
+            lista.appendChild(item);
+        });
+    } catch (error) {
+        console.error("Erro ao carregar estações:", error);
+    }
+}
+
+window.onload = () => {
+    moverMetro();
+    carregarEstacoes();
+};
