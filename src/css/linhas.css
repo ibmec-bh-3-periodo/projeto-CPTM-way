@@ -11,9 +11,6 @@
     font-size: 1.2em; 
 }
 
-#timer {
-    font-size: 2em; 
-}
 
 #Primeiro_Lugar h1, #SegundoLugar h1, #Terceiro_Lugar h1 {
     font-size: 1.6em; 
@@ -48,43 +45,8 @@
     justify-content: center;
     align-items: center;
 }
-#Progresso{
-    width: 60%;
-    height: 35px;
-    background-color: rgb(207, 225, 234);
-    border-bottom-left-radius: 15px;
-    border-top-left-radius: 15px;
-    border-bottom-right-radius: 15px;
-    border-top-right-radius: 15px;
-    border-bottom: #F7494B;
-    position: relative;
-    margin: 20px auto;
-}
-#linha {
-    width: 99%;
-    height: 2px;
-    background-color: #F7494B;
-    position: absolute;
-    top: 50%;
-    left: 0;
-    transform: translateY(500%);
-}
-#metrozinho{
-    width: 60px;
-    position: absolute;
-    top:-4px; 
-    left: 0;
-}
-#Timer{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-#timer {
-    color: #F7494B;
-}
+
+
 #Endereço{
     display: flex;
     flex-direction: column;
@@ -258,48 +220,7 @@
         margin-top:40px ;
     }
 
-    #Progresso {
-        width: 100%; 
-        max-width: 430px; 
-        height: 35px;
-        background-color: white;
-        border-radius: 15px;
-        margin: 20px auto;
-        border: 1px solid rgb(101, 100, 100);
-        
-    }
-
-    #linha {
-        width: 98%;
-        height: 2px;
-        background-color: #F7494B;
-        top: 50%;
-        transform: translateY(500%);
-        left: 5px
-
-    }
-
-    #metrozinho {
-        width: 60px;
-        position: absolute;
-        top: -4px;
-        left: 0;
-    }
-
-    #timer {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        font-size: 25px;
-        color: rgb(101, 100, 100);
-        font-weight: bold;
-    }
-
-    #timer_chegada{
-        color: rgb(101, 100, 100);
-    }
+    
 
     #Endereço {
         display: flex;
