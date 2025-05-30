@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
-    <title>CPTM</title>
-    <link rel="stylesheet" href="../css/qrcode.css">
-    <link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
-    <script src="//unpkg.com/alpinejs" defer></script>   
-    <script src="https://cdn.tailwindcss.com"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CPTM</title>
+  <link rel="stylesheet" href="../css/qrcode.css" />
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"/>
+  <script src="//unpkg.com/alpinejs" defer></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.jsdelivr.net/npm/qrious/dist/qrious.min.js"></script>
 </head>
 <body class="bg-white h-screen w-full">
-    <div x-data="{ open: false, showMoney: false }" class="relative">
+   <div x-data="{ open: false, showMoney: false }" class="relative">
         <!-- Botão para abrir o menu -->
         <header class="bg-white-200 p-4 flex justify-between items-center z-20 relative">
             <button @click="open = !open" class="text-xl flex items-center space-x-2" id="menu-button">
@@ -79,40 +79,88 @@
         </aside>
     </div> 
 
-    <header class="header">
-        <h1>QR Codes</h1>
-    </header>
+  <header class="header">
+    <h1>QR Codes</h1>
+  </header>
 
-    <section class="qr-section">
-        <div class="qr-card">
-            <img src="../imgs/qrcode_placeholder.svg" alt="QR Code" class="qr-image">
-            <div class="ticket-info">
-                <p><strong>Categoria:</strong> CPTM e Metrô</p>
-                <p><strong>Transação:</strong> XXXXXXXXXX</p>
-                <p><strong>Valor:</strong> R$0,00</p>
-            </div>
+  <section class="qr-section">
+    <div class="qr-carousel">
+      <button id="prevBtn" class="nav-btn">&lt;</button>
+      <div class="qr-card" id="qr-container">
+        <canvas id="qr-canvas" class="qr-image"></canvas>
+        <div class="ticket-info">
+          <p><strong>Categoria:</strong> CPTM e Metrô</p>
+          <p><strong>Transação:</strong> <span id="transacao">----------</span></p>
+          <p><strong>Valor:</strong> <span id="valor">R$0,00</span></p>
         </div>
+      </div>
+      <button id="nextBtn" class="nav-btn">&gt;</button>
+    </div>
+    <div class="pagination">
+      <p id="pageIndicator">1 de 1</p>
+    </div>
+  </section>
 
-        <div class="pagination">
-            <span class="dot active"></span>
-            <span class="dot"></span>
-            <span class="dot"></span>
-            <span class="dot"></span>
-            <span class="dot"></span>
-            <p>1 de 5</p>
-        </div>
-    </section>
+  <section class="purchase-section">
+    <button class="buy-button" onclick="gerarQRCode()">Comprar</button>
+    <p class="ticket-type">Bilhetes CPTM e Metrô</p>
+  </section>
 
-    <section class="purchase-section">
-        <button class="buy-button">
-             Comprar
-        </button>
-        <p class="ticket-type">Bilhetes CPTM e Metrô</p>
-    </section>
+  <section class="info-section">
+    <i class="fa-regular fa-circle-info info-icon"></i>
+    <p>Estes são seus Bilhetes Digitais QR Code aceitos nas estações de Trem e Metrô de São Paulo.</p>
+  </section>
 
-    <section class="info-section">
-        <i class="fa-regular fa-circle-info info-icon"></i>
-        <p>Estes são seus Bilhetes Digitais QR Code aceitos nas estações de Trem e Metrô de São Paulo.</p>
-    </section>
+  <script>
+    const qrCanvas = document.getElementById('qr-canvas');
+    const qr = new QRious({
+      element: qrCanvas,
+      size: 180,
+      value: ''
+    });
+
+    let historico = [];
+    let indexAtual = 0;
+
+    function gerarQRCode() {
+      const transacao = 'T' + Math.floor(Math.random() * 1000000000).toString().padStart(9, '0');
+      const valor = '5,00';
+      const conteudo = `Transação: ${transacao} | Valor: R$${valor}`;
+
+      // Adiciona novo QR Code ao histórico
+      if (historico.length >= 5) historico.shift();
+      historico.push({ transacao, valor, conteudo });
+
+      indexAtual = historico.length - 1;
+      renderQRCode();
+    }
+
+    function renderQRCode() {
+      if (historico.length === 0) return;
+
+      const atual = historico[indexAtual];
+      qr.value = atual.conteudo;
+      document.getElementById('transacao').textContent = atual.transacao;
+      document.getElementById('valor').textContent = `R$${atual.valor}`;
+      document.getElementById('pageIndicator').textContent = `${indexAtual + 1} de ${historico.length}`;
+    }
+
+    document.getElementById('prevBtn').addEventListener('click', () => {
+      if (indexAtual > 0) {
+        indexAtual--;
+        renderQRCode();
+      }
+    });
+
+    document.getElementById('nextBtn').addEventListener('click', () => {
+      if (indexAtual < historico.length - 1) {
+        indexAtual++;
+        renderQRCode();
+      }
+    });
+
+    // Inicializa com um código
+    gerarQRCode();
+  </script>
 </body>
 </html>
