@@ -45,26 +45,12 @@
                         placeholder="Senha:"
                         required
                     >
-                    <!-- Aviso de erro -->
-                    <div
-                        id="error-message"
-                        class="-mt-2 bg-red-100 border border-red-400 text-red-700 px-4 py-2 rounded text-sm"
-                    >
-                    ></div>
             </div>
 
             <div class="mt-4">
                 <button
                     class="login-button shadow-lg font-bold"
-                    type="button"
-                    onclick="
-                        const result = validateLogin();
-                        if (result === true) {
-                            window.location.href = 'home.html';
-                        } else {
-                            document.getElementById('error-message').textContent = result;
-                        }
-                    "
+                    type="submit"
                 >
                     Continuar
                 </button>
