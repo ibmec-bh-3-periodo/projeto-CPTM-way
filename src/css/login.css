@@ -38,13 +38,13 @@ h1 {
 }
 
 .caixa{
-    height: 250px;
+    height: 300px;
     border-radius: 15px;
 }
 
 form {
     width: 100%;
-    height: 280px;
+    height: 370px;
     display: flex;
     flex-direction: column;
     border-radius: 15px;
