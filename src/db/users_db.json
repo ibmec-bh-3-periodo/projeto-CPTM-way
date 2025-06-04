@@ -34,5 +34,11 @@
     "telefone": "(31)944444444",
     "email": "Marcelo@gmail.com",
     "senha": "1234586"
+  },
+  {
+    "nome": "Matheus Andrade",
+    "telefone": "(12) 34567-8901",
+    "email": "matheus@email.com",
+    "senha": "12345678"
   }
 ]
