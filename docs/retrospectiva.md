@@ -122,6 +122,14 @@
 - **Nota para desempenho (0 a 10)**: 7  
   - **Comentário**: Colaborou bem na parte de documentação e build de front, mas precisa se aprofundar em conceitos de redes Docker para minimizar retrabalho.
 
+### Ian Meirelles
+- **Contribuições principais**:  
+  - Finalização dos endpoints da API (GET/POST/PUT/DELETE de usuários) e implementação da rota de atualização de perfil.  
+  - Escrita de testes Jest para todos os novos endpoints e ajustes de cobertura.  
+- **Dificuldade enfrentada**:  
+  - Tratamento de erros no fluxo assíncrono (`async/await`) e garantia de escrita correta no JSON (db).  
+- **Nota para desempenho (0 a 10)**: 6  
+  - **Comentário**: Concluiu a parte de API, mas atrasos no endpoint de profile impactaram o cronograma. Pode melhorar a estimativa de tempo ao lidar com leituras/escritas de arquivos.
 
 
 ---
